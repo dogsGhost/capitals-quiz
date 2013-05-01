@@ -37,10 +37,9 @@
 
 // Media Queries
 /* breakpoints:
-  Palm - things that fit in our hands (like phones).
-  Lap - devices that are not handheld, but ‘lap’ devices (like tablets).
-  Portable - either of the above.
-  Desk - stationary devices (like TVs, PCs etc).
+* 800px
+* 650px
+* 550px
 */
 
 @mixin mq($maxValue, $minValue: 0) {

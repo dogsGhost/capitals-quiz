@@ -26,10 +26,10 @@
 
 .question__name {
 	margin: 0;
-	height: 2em;
-	line-height: 2em;
+	padding: .5em .25em;
+	line-height: 1;
 	text-align: center;
-  color: $darkblue;
+	color: $darkblue;
 	background: $coral;
 }
 

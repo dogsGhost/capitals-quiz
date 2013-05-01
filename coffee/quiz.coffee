@@ -83,6 +83,7 @@ cQ =
 			for item in data
 				cQ.userAnswers.push item
 			cQ.numberAnswered += cQ.qSetLength
+			$('body').scrollTop(0)
 
 			# Check if they've finished then show next set or show results.
 			if cQ.numberAnswered >= cQ.totalQuestions then cQ.showResults() else cQ.showNextSet()

@@ -13,15 +13,18 @@
     <script src="js/modernizr.min.js"></script>
 </head>
 <body>
+    <!--[if lte IE 8]>
+      <p class="broswer-alert">Please note this site has not been tested in Internet Explorer. Some things may not appear of function correctly.</p>
+    <![endif]-->
     <noscript>
         <p class="broswer-alert">JavaScript must be turned on for this page to work correctly.</p>
     </noscript>
     <div class="page-wrap">
         <header class="header header--main" role="banner">
-            <h1>Capitals Quiz</h1>
+            <h1>CapitalsQuiz.Me</h1>
         </header>
         <div class="container" role="main">
-            <!-- <h2>CapitalsQuiz.Me</h2> -->
+            <h2>CapitalsQuiz.Me</h2>
             <p>Quiz me on the capitals of:</p>
             <ul class="quiz-list" id="quizList">
                 <li><a href="#usa" class="btn btn--quiz" id="usa">United States</a></li>             
@@ -34,11 +37,10 @@
             </form>
         </div> <!-- end /container -->
         <footer class="footer footer--main" role="contentinfo">
-            <small>2013<!-- | <a href="http://davwilh.com/">David made this</a>--></small>
+            <small>2013 | <a href="http://davwilh.com/">David made this</a></small>
         </footer>
     </div> <!-- end /page-wrap -->
-<script src="js/jquery.js"></script>
-<script src="js/handlebars.js"></script>
+<script src="js/libraries.min.js"></script>
 
 <script id="quiz-form-template" type="text/x-handlebars-template">
   <div class="progress-info">
@@ -88,8 +90,7 @@
 <a href="#" class="btn btn--new-game">Quiz Me Again!</a>
 </script>
 
-<script src="js/json-variables.js"></script>
-<script src="js/main.js"></script>
+<script src="js/scripts.min.js"></script>
 
 <script type="text/javascript">
 

@@ -78,6 +78,7 @@
           cQ.userAnswers.push(item);
         }
         cQ.numberAnswered += cQ.qSetLength;
+        $('body').scrollTop(0);
         if (cQ.numberAnswered >= cQ.totalQuestions) {
           return cQ.showResults();
         } else {
