@@ -1,0 +1,52 @@
+/*
+* Styles for top-level elements, consistent across mulitple pages or views.
+*/
+
+.page-wrap {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 960px;
+	-webkit-transform: translateZ(0);
+	    -ms-transform: translateZ(0);
+	        transform: translateZ(0);
+}
+
+.header, .footer {
+	padding: 1em 0 1.25em;
+	line-height: 1;
+}
+
+.footer--main a {
+	color: $coral;
+	text-decoration: none;
+
+	&:hover {
+		color: lighten($coral, 5%);
+	}
+}
+
+.container {
+	@include border-box;
+	position: relative;
+	padding: $base-line-height 1em 1.5em;
+	background: #efefef;
+	border: $greyborder;
+	border-radius: 1em;
+}
+
+// List of available quizzes.
+
+// Hide the list if javascript is off since the link won't work anyway.
+.no-js .quiz-list {
+	display: none;
+}
+
+.quiz-list {
+	padding: 0 0 0 2em;
+
+	li {
+		margin: 0 0 .5em;
+		font-style: italic;
+		color: #888;
+	}
+}

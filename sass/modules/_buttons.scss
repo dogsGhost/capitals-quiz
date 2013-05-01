@@ -1,0 +1,43 @@
+.btn {
+	display: inline-block;
+	padding: .5em 1em;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background: $darkblue;
+	border: none;
+	border-radius: .5em;
+
+	&:hover {
+		background: $medblue;
+	}
+}
+
+.btn--quiz {
+	font-style: normal;
+}
+
+.btn--inactive {
+	color: #888;
+	background: $grey;
+	cursor: default;
+
+	&:hover {
+		background: $grey;
+	}
+
+}
+
+.btn--next, .btn--results {
+	font-size: $base-line-height;
+	padding: .5em 2em;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+}
+
+.btn--new-game {
+	@extend .btn--next;
+	display: table;
+	line-height: 1;
+}

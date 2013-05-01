@@ -1,0 +1,19 @@
+/*
+* Layout deals specifically with how elements are positioned on a page.
+*/
+
+.grid {
+	@include clearfix;
+	padding: $base-line-height 0;
+}
+
+.col {
+	@include border-box;
+	padding: 0 0 0 1em;
+	width: 33.33%;
+	float: left;
+}
+
+.col:first-of-type {
+	padding: 0;
+}

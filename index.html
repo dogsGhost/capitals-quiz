@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Test your knowledge of the capitals | Capitals Quiz</title>
+    <meta name="description" content="Take a quiz on the capitals of the fifty United States.">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/modernizr.min.js"></script>
+</head>
+<body>
+    <noscript>
+        <p class="broswer-alert">JavaScript must be turned on for this page to work correctly.</p>
+    </noscript>
+    <div class="page-wrap">
+        <header class="header header--main" role="banner">
+            <h1>Capitals Quiz</h1>
+        </header>
+        <div class="container" role="main">
+            <!-- <h2>CapitalsQuiz.Me</h2> -->
+            <p>Quiz me on the capitals of:</p>
+            <ul class="quiz-list" id="quizList">
+                <li><a href="#usa" class="btn btn--quiz" id="usa">United States</a></li>             
+                <li><a href="#canada" class="btn btn--quiz btn--inactive" id="canada">Canada</a> Coming soon!</li>             
+            </ul>
+            <form id="quiz-form" role="form">
+                <div id="quiz-form__container">
+                </div>
+                <input type="submit" value="Next Set &#10145;" id="quiz-form__submit" class="btn btn--next">
+            </form>
+        </div> <!-- end /container -->
+        <footer class="footer footer--main" role="contentinfo">
+            <small>2013<!-- | <a href="http://davwilh.com/">David made this</a>--></small>
+        </footer>
+    </div> <!-- end /page-wrap -->
+<script src="js/jquery.js"></script>
+<script src="js/handlebars.js"></script>
+
+<script id="quiz-form-template" type="text/x-handlebars-template">
+  <div class="progress-info">
+    <p class="progress-info__text">{{answered}} of {{total}} answered</p>
+    <div class="progress-info__meter">
+      <div class="progress-info__bar" style="width: {{percentage}};"></div>
+    </div>
+  </div>
+  <div class="grid">
+    {{#each states}}
+    <div class="col">
+      <div class="question question--{{this.abbr}}">
+        <div class="question__image">     
+          <div data-state="{{this.abbr}}" class="{{this.abbr}}">{{this.letter}}</div>
+          <h2 class="question__name">{{this.name}}</h2>
+        </div>
+        <ul class="question__responses">
+          {{#each this.cities}}
+          <li>
+            <input type="radio" name="{{../abbr}}" value="{{this}}" id="radio-{{@index}}-{{../abbr}}">
+            <label for="radio-{{@index}}-{{../abbr}}">{{this}}</label>
+          </li>
+          {{/each}}
+          <li class="radio-default">
+            <input type="radio" name="{{abbr}}" value="" checked id="radio-default-{{abbr}}">
+            <label for="radio-default-{{abbr}}">null</label>
+          </li>          
+        </ul>
+      </div> <!-- end /question -->
+    </div> <!-- end /col -->
+    {{/each}}
+  </div> <!-- end /grid -->
+</script>
+
+<script id="results-template" type="text/x-handlebars-template">
+<p class="results">
+  You scored a <span class="percentage">{{score}}</span><br>
+  thats <span class="correct">{{correct}}</span> of <span class="total">{{total}}</span><br>
+  capitals correct!
+</p>
+<p class="results">What you missed:</p>
+<ul class="incorrect">
+  {{#each wrong}}
+  <li><div data-state="{{this.abbr}}">{{this.letter}}</div><span>{{this.capital}}, {{this.name}}</span></li>
+  {{/each}}
+</ul>
+<a href="#" class="btn btn--new-game">Quiz Me Again!</a>
+</script>
+
+<script src="js/json-variables.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40531532-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

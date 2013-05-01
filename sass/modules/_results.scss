@@ -1,0 +1,43 @@
+.results {
+	margin: 0 0 .5em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	color: #fff;
+	text-shadow: 0 0 1px #111;
+
+	span {
+		font-size: 1.25em;
+		color: $medblue;
+		text-shadow: none;
+	}
+}
+
+.no-textshadow .results {
+	color: $grey;
+}
+
+.incorrect {
+	@include clearfix;
+	text-align: center;
+
+	li {
+		padding: 0 0 .5em;
+		margin: 0 1% 1em 1%;
+		width: 31%;
+		float: left;
+		color: $darkblue;
+		background: #fff;
+		border: $greyborder;
+		border-radius: 1em;
+
+	}
+
+	[data-state] {
+		padding: .1em 0;
+		padding: .5rem 0 0;
+		font-size: 5em;
+		color: $coral;
+	  //text-shadow: 0 1px 1px rgba(0,0,0, .3);
+	}
+}

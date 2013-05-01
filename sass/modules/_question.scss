@@ -1,0 +1,129 @@
+.question {
+	position: relative;
+	padding: .5em;
+	min-height: 230px;
+	border-radius: 1em;
+	border-radius: 1em;
+	background: #fff;
+	border: $greyborder;
+}
+
+.question__image {
+
+	div[data-state] {
+		padding: .1em 0; // fallback
+		padding: .5rem 0;
+		overflow: hidden;
+		text-align: center;
+		font-size: 8em;
+		color: $darkblue;
+		border: $greyborder;
+		border-bottom: none;
+		border-radius: .7rem .7rem 0 0;
+		//text-shadow: 0 1px 3px rgba(0,0,0, .4);
+	}
+}
+
+.question__name {
+	margin: 0;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+  color: $darkblue;
+	background: $coral;
+}
+
+.question__responses {
+
+	li {
+		position: relative;
+		padding: 0 0 0 1em;
+		border-top: 2px solid #e3e3e3;
+	}
+
+	li:first-child {
+		border-top: none;
+	}
+	
+	input[type="radio"] {
+		opacity: 0;
+		float: left;
+	}
+
+	label {
+		display: inline-block;
+		min-width: 70%;
+		min-height: 44px;
+		line-height: 44px;
+		cursor: pointer;
+	}
+
+	input[type="radio"] + label:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 8px;
+		margin: -0.25em 0 0;
+		height: .5em;
+		width: .5em;
+		font-size: 1.25em;
+		background: #333;
+		border-radius: 100%;
+	}
+	input[type="radio"]:checked + label:before {
+		background: none;
+}
+	input[type="radio"]:checked + label:before {
+		content: "\272D"; //2297 - x // 272d - star
+		margin: -.5em 0 0;
+		left: 5px;
+		height: auto;
+		width: auto;
+		line-height: 1;
+		background: none;
+		border-radius: 0;
+	}	
+}
+
+.radio-default {
+	display: none;
+}
+
+.question__no-answer {
+	@include border-box;
+	position: absolute;
+	bottom: 103%;
+	left: -2px;
+	right: -2px;
+	margin: -4.5em 0 0;
+	padding: 1em;
+	background: #fff;
+	border: $greyborder;
+	border-radius: 1em;
+	box-shadow: 0 0 4px 1px rgba($coral, .6);
+
+	p {
+		margin: 0;
+	}
+
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		margin-left: -16px;
+		bottom: -31px;
+		left: 50%;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 32px solid #fff;
+	}
+	
+	&:before {
+		margin-left: -18px;
+		bottom: -34px; 
+		border-left: 22px solid transparent;
+		border-right: 22px solid transparent;
+		border-top: 34px solid rgba($coral, .3);
+	}
+}

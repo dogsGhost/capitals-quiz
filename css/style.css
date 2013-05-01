@@ -1,0 +1,266 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+/* breakpoints: Palm - things that fit in our hands (like phones). Lap - devices that are not handheld, but ‘lap’ devices (like tablets). Portable - either of the above. Desk - stationary devices (like TVs, PCs etc).
+*/
+/*
+* A Base rule is applied to an element using an element selector, a descendent
+* selector, or a child selector, along with any pseudo-classes. It doesn’t
+* include any class or ID selectors. It is defining the default styling for how
+* that element should look in all occurrences on the page.
+*/
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000329}}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+/* ========================================================================== Base ========================================================================== */
+/** 1. Prevent system color scheme's background color being used in Firefox, IE, and Opera. 2. Prevent system color scheme's text color being used in Firefox, IE, and Opera. 3. Set default font family to sans-serif. 4. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000347}}
+html { -ms-text-size-adjust: 100%; /* 4 */ -webkit-text-size-adjust: 100%; /* 4 */ }
+
+/* ========================================================================== Links ========================================================================== */
+/** Address `outline` inconsistency between Chrome and other browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000360}}
+a:focus { outline: thin dotted; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000369}}
+a:active, a:hover { outline: 0; }
+
+/* ========================================================================== Typography ========================================================================== */
+/** Address styling not present in IE 8/9, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000381}}
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000390}}
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari 5 and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\0000398}}
+dfn { font-style: italic; }
+
+/** Address differences between Firefox and other browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003106}}
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+
+/** Address styling not present in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003116}}
+mark { background: #ff0; color: #000; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003127}}
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003134}}
+sup { top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003138}}
+sub { bottom: -0.25em; }
+
+/* ========================================================================== Forms ========================================================================== */
+/** Define consistent border, margin, and padding. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003151}}
+fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003162}}
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** 1. Correct font family not being inherited in all browsers. 2. Correct font size not being inherited in all browsers. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003176}}
+button, input, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003188}}
+button, input { line-height: normal; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+. Correct `select` style inheritance in Firefox 4+ and Opera. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003200}}
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003215}}
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003225}}
+button[disabled], html input[disabled] { cursor: default; }
+
+/** 1. Address box sizing set to `content-box` in IE 8/9. 2. Remove excess padding in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003235}}
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Remove inner padding and border in Firefox 4+. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003245}}
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* ========================================================================== Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003258}}
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* HTML5 Boilerplate  What follows is the result of much research on cross-browser styling. Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
+/* ========================================================================== Base styles: opinionated defaults ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003279}}
+html, button, input, select, textarea { color: #333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003283}}
+body { margin: 0; font: 1em/1.25 Helvetica, Arial, sans-serif; background-color: #e3e3e3; background-image: -webkit-linear-gradient(transparent 50%, #dfdfdf 50%); background-image: linear-gradient(transparent 50%, #dfdfdf 50%); background-size: 16px 16px; }
+
+/* Remove text-shadow in selection highlight: h5bp.com/i These selection rule sets have to be separate. Customize the background color to match your design. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003298}}
+::-moz-selection { background: #f15466; color: #fff; text-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003304}}
+::selection { background: #f15466; color: #fff; text-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003310}}
+p { margin: 0 0 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_base\.scss}line{font-family:\00003314}}
+ul { margin: 0; padding: 0; list-style: none; }
+
+/*
+* Layout deals specifically with how elements are positioned on a page.
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_layout\.scss}line{font-family:\000035}}
+.grid { *zoom: 1; padding: 1.25em 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/bits\/_mixins\.scss}line{font-family:\000036}}
+.grid:before, .grid:after { content: " "; display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/bits\/_mixins\.scss}line{font-family:\0000310}}
+.grid:after { clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_layout\.scss}line{font-family:\0000310}}
+.col { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 0 0 1em; width: 33.33%; float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_layout\.scss}line{font-family:\0000317}}
+.col:first-of-type { padding: 0; }
+
+/*
+* Styles for top-level elements, consistent across mulitple pages or views.
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\000035}}
+.page-wrap { margin: 0 auto; width: 90%; max-width: 960px; -webkit-transform: translateZ(0); -ms-transform: translateZ(0); transform: translateZ(0); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000314}}
+.header, .footer { padding: 1em 0 1.25em; line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000319}}
+.footer--main a { color: #f15466; text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000323}}
+.footer--main a:hover { color: #f36c7b; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000328}}
+.container { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; padding: 1.25em 1em 1.5em; background: #efefef; border: 1px solid lightgrey; border-radius: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000340}}
+.no-js .quiz-list { display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000344}}
+.quiz-list { padding: 0 0 0 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_global\.scss}line{font-family:\0000347}}
+.quiz-list li { margin: 0 0 0.5em; font-style: italic; color: #888; }
+
+/*
+* Font rules.
+*/
+@font-face { font-family: 'StateFaceRegular'; src: url("../fonts/state-face/stateface-regular-webfont.eot"); src: url("../fonts/state-face/stateface-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/state-face/stateface-regular-webfont.woff") format("woff"), url("../fonts/state-face/stateface-regular-webfont.ttf") format("truetype"), url("../fonts/state-face/stateface-regular-webfont.svg#StateFaceRegular") format("svg"); font-weight: normal; font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_typography\.scss}line{font-family:\0000322}}
+h1, h2, h3, h4 { margin: 0; font-weight: normal; font-family: "Lobster", Verdana, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_typography\.scss}line{font-family:\0000328}}
+h1 { font-size: 2em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_typography\.scss}line{font-family:\0000332}}
+h2 { margin: 0 0 0.66em; font-size: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_typography\.scss}line{font-family:\0000339}}
+[data-state] { font-family: "StateFaceRegular", sans-serif; line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\000031}}
+.btn { display: inline-block; padding: 0.5em 1em; text-decoration: none; text-align: center; color: #fff; background: #2c405d; border: none; border-radius: .5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\0000311}}
+.btn:hover { background: #344c6e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\0000316}}
+.btn--quiz { font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\0000320}}
+.btn--inactive { color: #888; background: lightgrey; cursor: default; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\0000325}}
+.btn--inactive:hover { background: lightgrey; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\0000331}}
+.btn--next, .btn--new-game, .btn--results { font-size: 1.25em; padding: 0.5em 2em; margin: 0 auto; display: block; clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_buttons\.scss}line{font-family:\0000339}}
+.btn--new-game { display: table; line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_progress-info\.scss}line{font-family:\000031}}
+.progress-info__text { margin: 0 0 0.75rem; text-align: right; font-size: 90%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_progress-info\.scss}line{font-family:\000037}}
+.progress-info__meter { overflow: hidden; background: #2c405d; border-radius: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_progress-info\.scss}line{font-family:\0000314}}
+.progress-info__bar { height: 8px; background-color: #f15466; border-radius: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\000031}}
+.question { position: relative; padding: .5em; min-height: 230px; border-radius: 1em; border-radius: 1em; background: #fff; border: 1px solid lightgrey; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000313}}
+.question__image div[data-state] { padding: 0.1em 0; padding: 0.5rem 0; overflow: hidden; text-align: center; font-size: 8em; color: #2c405d; border: 1px solid lightgrey; border-bottom: none; border-radius: 0.7rem 0.7rem 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000327}}
+.question__name { margin: 0; height: 2em; line-height: 2em; text-align: center; color: #2c405d; background: #f15466; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000338}}
+.question__responses li { position: relative; padding: 0 0 0 1em; border-top: 2px solid #e3e3e3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000344}}
+.question__responses li:first-child { border-top: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000348}}
+.question__responses input[type="radio"] { opacity: 0; float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000353}}
+.question__responses label { display: inline-block; min-width: 70%; min-height: 44px; line-height: 44px; cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000361}}
+.question__responses input[type="radio"] + label:before { content: ""; position: absolute; top: 50%; left: 8px; margin: -0.25em 0 0; height: .5em; width: .5em; font-size: 1.25em; background: #333; border-radius: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000373}}
+.question__responses input[type="radio"]:checked + label:before { background: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000376}}
+.question__responses input[type="radio"]:checked + label:before { content: "\272D"; margin: -0.5em 0 0; left: 5px; height: auto; width: auto; line-height: 1; background: none; border-radius: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000388}}
+.radio-default { display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\0000392}}
+.question__no-answer { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; position: absolute; bottom: 103%; left: -2px; right: -2px; margin: -4.5em 0 0; padding: 1em; background: #fff; border: 1px solid lightgrey; border-radius: 1em; box-shadow: 0 0 4px 1px rgba(241, 84, 102, 0.6); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\00003105}}
+.question__no-answer p { margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\00003109}}
+.question__no-answer:before, .question__no-answer:after { content: ""; position: absolute; margin-left: -16px; bottom: -31px; left: 50%; width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 32px solid white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_question\.scss}line{font-family:\00003122}}
+.question__no-answer:before { margin-left: -18px; bottom: -34px; border-left: 22px solid transparent; border-right: 22px solid transparent; border-top: 34px solid rgba(241, 84, 102, 0.3); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_results\.scss}line{font-family:\000031}}
+.results { margin: 0 0 0.5em; text-align: center; font-weight: bold; font-size: 2em; color: #fff; text-shadow: 0 0 1px #111111; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_results\.scss}line{font-family:\000039}}
+.results span { font-size: 1.25em; color: #344c6e; text-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_results\.scss}line{font-family:\0000316}}
+.no-textshadow .results { color: lightgrey; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_results\.scss}line{font-family:\0000320}}
+.incorrect { *zoom: 1; text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/bits\/_mixins\.scss}line{font-family:\000036}}
+.incorrect:before, .incorrect:after { content: " "; display: table; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/bits\/_mixins\.scss}line{font-family:\0000310}}
+.incorrect:after { clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_results\.scss}line{font-family:\0000324}}
+.incorrect li { padding: 0 0 0.5em; margin: 0 1% 1em 1%; width: 31%; float: left; color: #2c405d; background: #fff; border: 1px solid lightgrey; border-radius: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/modules\/_results\.scss}line{font-family:\0000336}}
+.incorrect [data-state] { padding: 0.1em 0; padding: 0.5rem 0 0; font-size: 5em; color: #f15466; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/side-projects\/capitalsquiz\.me\/sass\/partials\/_shame\.scss}line{font-family:\000033}}
+#quiz-form { display: none; }
