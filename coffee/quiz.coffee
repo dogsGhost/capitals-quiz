@@ -11,6 +11,8 @@ cQ =
 	cacheVariables: ->
 		@quizFormTemplate = Handlebars.compile $('#quiz-form-template').html()
 		@resultsTemplate = Handlebars.compile $('#results-template').html()
+		@$container = $ '.container'
+		@$initContent = []
 		@$quizForm = $ '#quiz-form'
 		@answerKey = []
 		@userAnswers = []
@@ -19,6 +21,7 @@ cQ =
 		@invalidForm = false
 		# This determines how many questions a user sees at one time.
 		@qSetLength = 3
+		return
 
 	bindQuizList: ->
 		$('#quizList').on 'click', 'a', @determineQuiz
@@ -26,28 +29,30 @@ cQ =
 	determineQuiz: (e) ->
 		e.preventDefault()
 		if @.id is 'usa'
-			cQ.createAnswerKey()
-			cQ.loadUsaQuiz()
+			$.getJSON 'js/statesAnswerKey.json', cQ.createAnswerKey
+		else if @.id is 'canada'
+			false
 
-	createAnswerKey: ->
+	createAnswerKey: (json) ->
 		# Randomize the key to be used for this quiz.
-		newBaseKey = @shuffle statesAnswerKey
+		newBaseKey = cQ.shuffle json	
 		for state in newBaseKey
-			state.cities = @shuffle state.cities
+			state.cities = cQ.shuffle state.cities
 			state.cities = state.cities.splice 2, 2
 			state.cities.push state.capital
-			state.cities = @shuffle state.cities
-			state.letter = statesLetterKey[state.abbr]
-		@answerKey = newBaseKey
-		@totalQuestions = @answerKey.length
+			state.cities = cQ.shuffle state.cities
+
+		cQ.answerKey = newBaseKey
+		cQ.totalQuestions = cQ.answerKey.length
+		cQ.loadUsaQuiz()
 
 	loadUsaQuiz: ->
 		# Remove everything except the form.
-		qC = @$quizForm.detach()
-		$('.container').empty().append qC
+		@$initContent = @$container.children().detach()
+		@$container.append @$initContent[3]
 
-		# call another func to create our html from templates
-		html = cQ.createQuestionSet()
+		# Create our html from templates.
+		html = @createQuestionSet()
 
 		# Bind form submit
 		@$quizForm.on 'submit', @processForm
@@ -83,7 +88,14 @@ cQ =
 			for item in data
 				cQ.userAnswers.push item
 			cQ.numberAnswered += cQ.qSetLength
-			$('body').scrollTop(0)
+
+			# Auto-scrollTop on mobile seems to require userAgent sniffing... bummer
+			if navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)
+				window.scroll 0, 0
+			else
+			  $('html, body').animate
+			  	scrollTop: 0
+			  , 600
 
 			# Check if they've finished then show next set or show results.
 			if cQ.numberAnswered >= cQ.totalQuestions then cQ.showResults() else cQ.showNextSet()
@@ -108,7 +120,7 @@ cQ =
 		@$quizForm
 			.find('div')
 				.html(html)
-
+				
 		# If this is the last set of questions.
 		if cQ.numberAnswered >= (cQ.totalQuestions - cQ.qSetLength)
 			@.$quizForm.find('input[type=submit]').val 'View Results \u27A1'
@@ -138,13 +150,17 @@ cQ =
 				.empty()
 				.end()
 			.remove()
-		$('.container').html html
+		@$container.html html
 
 		# Bind new game.
-		###
-		TODO - NOT THE BEST WAY TO DO THIS
-		###
+		#not the best way to do this
 		$('.btn--new-game').on 'click', -> location.reload()
+
+	###
+	This is what will load the original content back in, as opposed to a page reload.
+	loadInitView: ->
+		cQ.$container.empty().append cQ.$initContent
+	###
 
 	shuffle: (arr) ->
 		# Perform the Fisher-Yates shuffle on an array.

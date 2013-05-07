@@ -1,0 +1,602 @@
+[
+  {
+    "name": "Nevada",
+    "capital": "Carson City",
+    "cities": [
+      "Reno",
+      "Las Vegas",
+      "Henderson",
+      "Sparks"
+    ],
+    "abbr": "nv",
+    "letter": "g"
+  },
+  {
+    "name": "California",
+    "capital": "Sacramento",
+    "cities": [
+      "Los Angeles",
+      "San Diego",
+      "San Jose",
+      "San Francisco"
+    ],
+    "abbr": "ca",
+    "letter": "E"
+  },
+  {
+    "name": "Minnesota",
+    "capital": "Saint Paul",
+    "cities": [
+      "Minneapolis",
+      "Duluth",
+      "Rochester",
+      "Madison"
+    ],
+    "abbr": "mn",
+    "letter": "W"
+  },
+  {
+    "name": "Rhode Island",
+    "capital": "Providence",
+    "cities": [
+      "Warwick",
+      "Newport",
+      "Central Falls",
+      "Kingston"
+    ],
+    "abbr": "ri",
+    "letter": "m"
+  },
+  {
+    "name": "Virginia",
+    "capital": "Richmond",
+    "cities": [
+      "Norfolk",
+      "Alexandria",
+      "Winchester",
+      "Petersburg"
+    ],
+    "abbr": "va",
+    "letter": "s"
+  },
+  {
+    "name": "Louisiana",
+    "capital": "Baton Rouge",
+    "cities": [
+      "New Orleans",
+      "Alexandria",
+      "Shreveport",
+      "Lafayette"
+    ],
+    "abbr": "la",
+    "letter": "R"
+  },
+  {
+    "name": "Vermont",
+    "capital": "Montpelier",
+    "cities": [
+      "Rutland",
+      "Burlington",
+      "Barre",
+      "Concord"
+    ],
+    "abbr": "vt",
+    "letter": "t"
+  },
+  {
+    "name": "Tennessee",
+    "capital": "Nashville",
+    "cities": [
+      "Memphis",
+      "Jackson",
+      "Knoxvile",
+      "Chattanooga"
+    ],
+    "abbr": "tn",
+    "letter": "p"
+  },
+  {
+    "name": "Hawaii",
+    "capital": "Honolulu",
+    "cities": [
+      "Hilo",
+      "Kailua",
+      "Kahului",
+      "Kaneohe"
+    ],
+    "abbr": "hi",
+    "letter": "K"
+  },
+  {
+    "name": "Illinois",
+    "capital": "Springfield",
+    "cities": [
+      "Chicago",
+      "Rockford",
+      "Joliet",
+      "Bloomington"
+    ],
+    "abbr": "il",
+    "letter": "N"
+  },
+  {
+    "name": "Colorado",
+    "capital": "Denver",
+    "cities": [
+      "Aurora",
+      "Fort Collins",
+      "Pubelo",
+      "Colorado Springs"
+    ],
+    "abbr": "co",
+    "letter": "F"
+  },
+  {
+    "name": "Mississippi",
+    "capital": "Jackson",
+    "cities": [
+      "Gulfport",
+      "Biloxi",
+      "Greenville",
+      "Meridian"
+    ],
+    "abbr": "ms",
+    "letter": "Y"
+  },
+  {
+    "name": "Ohio",
+    "capital": "Columbus",
+    "cities": [
+      "Cleveland",
+      "Toledo",
+      "Cincinnati",
+      "Dayton"
+    ],
+    "abbr": "oh",
+    "letter": "i"
+  },
+  {
+    "name": "Idaho",
+    "capital": "Boise",
+    "cities": [
+      "Pocatello",
+      "Idaho Falls",
+      "Nampa",
+      "Twin Falls"
+    ],
+    "abbr": "id",
+    "letter": "M"
+  },
+  {
+    "name": "Oregon",
+    "capital": "Salem",
+    "cities": [
+      "Portland",
+      "Eugene",
+      "Bend",
+      "Corvallis"
+    ],
+    "abbr": "or",
+    "letter": "k"
+  },
+  {
+    "name": "Michigan",
+    "capital": "Lansing",
+    "cities": [
+      "Grand Rapids",
+      "Flint",
+      "Detroit",
+      "Ann Arbor"
+    ],
+    "abbr": "mi",
+    "letter": "V"
+  },
+  {
+    "name": "Kansas",
+    "capital": "Topeka",
+    "cities": [
+      "Kansas City",
+      "Olathe",
+      "Wichita",
+      "Overland Park"
+    ],
+    "abbr": "ks",
+    "letter": "P"
+  },
+  {
+    "name": "Delaware",
+    "capital": "Dover",
+    "cities": [
+      "Newark",
+      "Pike Creek",
+      "Bear",
+      "Wilmington"
+    ],
+    "abbr": "de",
+    "letter": "H"
+  },
+  {
+    "name": "Wisconsin",
+    "capital": "Madison",
+    "cities": [
+      "Milwaukee",
+      "Green Bay",
+      "Appleton",
+      "Janesville"
+    ],
+    "abbr": "wi",
+    "letter": "v"
+  },
+  {
+    "name": "Arizona",
+    "capital": "Phoenix",
+    "cities": [
+      "Scottsdale",
+      "Mesa",
+      "Glendale",
+      "Tucson"
+    ],
+    "abbr": "az",
+    "letter": "D"
+  },
+  {
+    "name": "Nebraska",
+    "capital": "Lincoln",
+    "cities": [
+      "Omaha",
+      "Bellevue",
+      "Fremont",
+      "Columbus"
+    ],
+    "abbr": "ne",
+    "letter": "c"
+  },
+  {
+    "name": "Massachusetts",
+    "capital": "Boston",
+    "cities": [
+      "Springfield",
+      "Worcester",
+      "Brockton",
+      "New Bedford"
+    ],
+    "abbr": "ma",
+    "letter": "S"
+  },
+  {
+    "name": "Indiana",
+    "capital": "Indianapolis",
+    "cities": [
+      "Fort Wayne",
+      "Evansville",
+      "South Bend",
+      "Gary"
+    ],
+    "abbr": "in",
+    "letter": "O"
+  },
+  {
+    "name": "South Carolina",
+    "capital": "Columbia",
+    "cities": [
+      "Charleston",
+      "Greenville",
+      "Spartanburg",
+      "Florence"
+    ],
+    "abbr": "sc",
+    "letter": "n"
+  },
+  {
+    "name": "North Dakota",
+    "capital": "Bismarck",
+    "cities": [
+      "Fargo",
+      "Minot",
+      "Grand Forks",
+      "Sioux Falls"
+    ],
+    "abbr": "nd",
+    "letter": "b"
+  },
+  {
+    "name": "Washington",
+    "capital": "Olympia",
+    "cities": [
+      "Tacoma",
+      "Bellingham",
+      "Seattle",
+      "Spokane"
+    ],
+    "abbr": "wa",
+    "letter": "u"
+  },
+  {
+    "name": "Iowa",
+    "capital": "Des Moines",
+    "cities": [
+      "Cedar Rapids",
+      "Davenport",
+      "Sioux City",
+      "Waterloo"
+    ],
+    "abbr": "ia",
+    "letter": "L"
+  },
+  {
+    "name": "Maryland",
+    "capital": "Annapolis",
+    "cities": [
+      "Frederick",
+      "Silver Spring",
+      "Columbia",
+      "Baltimore"
+    ],
+    "abbr": "md",
+    "letter": "T"
+  },
+  {
+    "name": "New Hampshire",
+    "capital": "Concord",
+    "cities": [
+      "Manchester",
+      "Nashua",
+      "Derry",
+      "Dover"
+    ],
+    "abbr": "nh",
+    "letter": "d"
+  },
+  {
+    "name": "Utah",
+    "capital": "Salt Lake City",
+    "cities": [
+      "Provo",
+      "Ogden",
+      "Saint George",
+      "Sandy"
+    ],
+    "abbr": "ut",
+    "letter": "r"
+  },
+  {
+    "name": "New Jersey",
+    "capital": "Trenton",
+    "cities": [
+      "Newark",
+      "Jersey City",
+      "Camden",
+      "Elizabeth"
+    ],
+    "abbr": "nj",
+    "letter": "e"
+  },
+  {
+    "name": "West Virginia",
+    "capital": "Charleston",
+    "cities": [
+      "Wheeling",
+      "Morgantown",
+      "Huntington",
+      "Richmond"
+    ],
+    "abbr": "wv",
+    "letter": "w"
+  },
+  {
+    "name": "Oklahoma",
+    "capital": "Oklahoma City",
+    "cities": [
+      "Tulsa",
+      "Norman",
+      "Stillwater",
+      "Dallas"
+    ],
+    "abbr": "ok",
+    "letter": "j"
+  },
+  {
+    "name": "Alabama",
+    "capital": "Montgomery",
+    "cities": [
+      "Birmingham",
+      "Huntsville",
+      "Tuscaloosa",
+      "Hoover"
+    ],
+    "abbr": "al",
+    "letter": "B"
+  },
+  {
+    "name": "Florida",
+    "capital": "Tallahassee",
+    "cities": [
+      "Tampa",
+      "Miami",
+      "Jacksonville",
+      "Orlando"
+    ],
+    "abbr": "fl",
+    "letter": "I"
+  },
+  {
+    "name": "Arkansas",
+    "capital": "Little Rock",
+    "cities": [
+      "Jonesboro",
+      "Fayetteville",
+      "Fort Smith",
+      "Glendale"
+    ],
+    "abbr": "ar",
+    "letter": "C"
+  },
+  {
+    "name": "South Dakota",
+    "capital": "Pierre",
+    "cities": [
+      "Sioux Falls",
+      "Rapid City",
+      "Bismarck",
+      "Mitchell"
+    ],
+    "abbr": "sd",
+    "letter": "o"
+  },
+  {
+    "name": "Maine",
+    "capital": "Augusta",
+    "cities": [
+      "Portland",
+      "Auburn",
+      "Bangor",
+      "Lewiston"
+    ],
+    "abbr": "me",
+    "letter": "U"
+  },
+  {
+    "name": "Wyoming",
+    "capital": "Cheyenne",
+    "cities": [
+      "Gillette",
+      "Laramie",
+      "Rock Springs",
+      "Casper"
+    ],
+    "abbr": "wy",
+    "letter": "x"
+  },
+  {
+    "name": "Georgia",
+    "capital": "Atlanta",
+    "cities": [
+      "Athens",
+      "Columbus",
+      "Savannah",
+      "Augusta"
+    ],
+    "abbr": "ga",
+    "letter": "J"
+  },
+  {
+    "name": "North Carolina",
+    "capital": "Raleigh",
+    "cities": [
+      "Wilmington",
+      "Charlotte",
+      "Winston Salem",
+      "Durham"
+    ],
+    "abbr": "nc",
+    "letter": "a"
+  },
+  {
+    "name": "Texas",
+    "capital": "Austin",
+    "cities": [
+      "El Paso",
+      "Dallas",
+      "Fort Worth",
+      "Houston"
+    ],
+    "abbr": "tx",
+    "letter": "q"
+  },
+  {
+    "name": "Montana",
+    "capital": "Helena",
+    "cities": [
+      "Butte",
+      "Billings",
+      "Great Falls",
+      "Missoula"
+    ],
+    "abbr": "mt",
+    "letter": "Z"
+  },
+  {
+    "name": "Connecticut",
+    "capital": "Hartford",
+    "cities": [
+      "Waterbury",
+      "Stamford",
+      "New London",
+      "Mystic"
+    ],
+    "abbr": "ct",
+    "letter": "G"
+  },
+  {
+    "name": "Pennsylvania",
+    "capital": "Harrisburg",
+    "cities": [
+      "York",
+      "Philadelphia",
+      "Erie",
+      "Scranton"
+    ],
+    "abbr": "pa",
+    "letter": "l"
+  },
+  {
+    "name": "Missouri",
+    "capital": "Jefferson City",
+    "cities": [
+      "Kansas City",
+      "Saint Louis",
+      "Springfield",
+      "Columbia"
+    ],
+    "abbr": "mo",
+    "letter": "X"
+  },
+  {
+    "name": "New Mexico",
+    "capital": "Santa Fe",
+    "cities": [
+      "Albuquerque",
+      "Gallup",
+      "Roswell",
+      "Las Cruces"
+    ],
+    "abbr": "nm",
+    "letter": "f"
+  },
+  {
+    "name": "Alaska",
+    "capital": "Juneau",
+    "cities": [
+      "Anchorage",
+      "Fairbanks",
+      "Sitka",
+      "Wasilla"
+    ],
+    "abbr": "ak",
+    "letter": "A"
+  },
+  {
+    "name": "New York",
+    "capital": "Albany",
+    "cities": [
+      "New York City",
+      "Buffalo",
+      "Rochester",
+      "Islip"
+    ],
+    "abbr": "ny",
+    "letter": "h"
+  },
+  {
+    "name": "Kentucky",
+    "capital": "Frankfort",
+    "cities": [
+      "Lexington",
+      "Louisville",
+      "Owensboro",
+      "Bowling Green"
+    ],
+    "abbr": "ky",
+    "letter": "Q"
+  }
+]

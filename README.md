@@ -12,10 +12,7 @@ Working version hosted at [capitalsquiz.me](http://capitalsquiz.me/).
 TODO:
 -----
 
-* ~~Incorporate media queries for smaller screens.~~
-* ~~Add scrollTop event to 'next set' button for smaller screens.~~
-* ScrollTop doesn't work on mobile devices, investigate work-arounds.
 * Bind 'quiz me again' link to a reusable function rather than just reload the page.
 * Improve selection acknowledgement on smaller screens when a user picks a capital.
-* Animate transition between 'quiz set' views.
+* CSS3 transitions for moving between 'quiz set' views and for scrollTop.
 * Incorporate Canada quiz.
