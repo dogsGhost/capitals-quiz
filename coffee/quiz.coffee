@@ -89,16 +89,9 @@ cQ =
 				cQ.userAnswers.push item
 			cQ.numberAnswered += cQ.qSetLength
 
-			# Auto-scrollTop on mobile seems to require userAgent sniffing... bummer
-			if navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)
-				window.scroll 0, 0
-			else
-			  $('html, body').animate
-			  	scrollTop: 0
-			  , 600
-
 			# Check if they've finished then show next set or show results.
 			if cQ.numberAnswered >= cQ.totalQuestions then cQ.showResults() else cQ.showNextSet()
+			cQ.toTop()
 
 	validateForm: (arr) ->
 		@invalidForm = false
@@ -173,5 +166,14 @@ cQ =
 	    arr[i] = tempj
 	    arr[j] = tempi
 	  arr
+
+	toTop: () ->
+		# Auto-scrollTop on mobile seems to require userAgent sniffing... bummer.
+		if navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)
+			window.scroll 0, 0
+		else
+		  $('html, body').animate
+		  	scrollTop: 0
+		  , 600
 
 cQ.init()
