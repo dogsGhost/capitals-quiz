@@ -1,0 +1,26 @@
+{
+  "name": "capitals-quiz",
+  "version": "1.0.0",
+  "description": "JavaScript powered game for matching the correct capital with the given state/country.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dogsGhost/capitals-quiz.git"
+  },
+  "author": "David Wilhelm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dogsGhost/capitals-quiz/issues"
+  },
+  "homepage": "https://dogsGhost.github.io/capitals-quiz",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-sass": "^1.3.2",
+    "gulp-uglify": "^1.1.0"
+  }
+}

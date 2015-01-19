@@ -1,4 +1,4 @@
-###
+###*
 * @fileOverview This file makes our quiz work.
 * @author David Wilhelm
 ###
@@ -35,7 +35,7 @@ cQ =
 
 	createAnswerKey: (json) ->
 		# Randomize the key to be used for this quiz.
-		newBaseKey = cQ.shuffle json	
+		newBaseKey = cQ.shuffle json
 		for state in newBaseKey
 			state.cities = cQ.shuffle state.cities
 			state.cities = state.cities.splice 2, 2
@@ -71,7 +71,7 @@ cQ =
 			answered: @numberAnswered
 			total: @totalQuestions
 			percentage: "#{String Math.round (@numberAnswered / @totalQuestions * 100)}%"
-		
+
 		# Generate html to be output.
 		@quizFormTemplate set
 
@@ -108,19 +108,19 @@ cQ =
 
 	showNextSet: ->
 		html = @createQuestionSet()
-		
+
 		# Populate the form with new questions.
 		@$quizForm
 			.find('div')
 				.html(html)
-				
+
 		# If this is the last set of questions.
 		if cQ.numberAnswered >= (cQ.totalQuestions - cQ.qSetLength)
 			@.$quizForm.find('input[type=submit]').val 'View Results \u27A1'
 
 	showResults: ->
 		# Check userAnswers vs answerKey.
-		results = 
+		results =
 			total: @totalQuestions
 			wrong: []
 
